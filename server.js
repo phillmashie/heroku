@@ -10,6 +10,7 @@ app.use(cors());
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to myKasa API." });
   });
+  
 const router = require('./src/routes/router.js');
 app.use('/api', router);
 // run server
